@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#cff4b9">
+
+    <Button
+        android:id="@+id/buttonAddLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#307c04"
+        android:onClick="switchToCreateLutemon"
+        android:text="Lisää uusi Lutemoni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFightArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchToFightArena"
+        android:text="Taisteluareenalle!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMoveLutemons"
+        app:layout_constraintVertical_bias="0.064"
+        android:backgroundTint="#307c04"/>
+
+    <Button
+        android:id="@+id/buttonMoveLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchToFragments"
+        android:text="Siirrä Lutemoneja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonListLutemons"
+        app:layout_constraintVertical_bias="0.051"
+        android:backgroundTint="#307c04"/>
+
+    <Button
+        android:id="@+id/buttonListLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="switchToListLutemon"
+        android:text="Listaa Lutemonit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddLutemon"
+        app:layout_constraintVertical_bias="0.033"
+        android:backgroundTint="#307c04"/>
+
+    <Button
+        android:id="@+id/buttonFeedLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#307c04"
+        android:onClick="switchToRestaurant"
+        android:text="Syötä Lutemonia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFightArena"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/buttonStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#307c04"
+        android:onClick="switchToStatistics"
+        android:text="Katsele tilastoja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFeedLutemons"
+        app:layout_constraintVertical_bias="0.12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

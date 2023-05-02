@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantActivity"
+    android:background="#cff4b9">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="406dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/coming_soon"
+        android:gravity="center"
+        android:text="Tervetuloa Lutemon ravintolaan!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="405dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:text="Valitse ruokittava Lutemoni: "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="405dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Valitse ruoka (Huom. Mieti tarkasti...)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgLutemonsInRest"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <RadioGroup
+        android:id="@+id/rgLutemonsInRest"
+        android:layout_width="234dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="feedLutemon"
+        android:text="Syötä ruoka Lutemonille"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupFoods"
+        app:layout_constraintVertical_bias="0.064"
+        android:backgroundTint="#307c04"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupFoods"
+        android:layout_width="217dp"
+        android:layout_height="211dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.044">
+
+        <RadioButton
+            android:id="@+id/radioButtonFruits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hedelmäsalaatti" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suklaakakku" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVitamins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lutemonien vitamiineja" />
+
+        <RadioButton
+            android:id="@+id/radioButtonIceCream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JättiJäätelöannos" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

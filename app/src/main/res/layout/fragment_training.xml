@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9d1f4"
+    tools:context=".fragments.FragmentTraining">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:fontFamily="@font/coming_soon"
+        android:gravity="center"
+        android:text="Valitse koulutettava Lutemoni:"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgTrain"
+        android:layout_width="204dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonMove2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="450dp"
+        android:text="Siirrä Lutemoni kohteeseen" />
+
+    <RadioGroup
+        android:id="@+id/rgPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioButtonHome"
+            android:layout_width="163dp"
+            android:layout_height="32dp"
+            android:text="Kotiin" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFight2"
+            android:layout_width="164dp"
+            android:layout_height="36dp"
+            android:text="Taisteluareenalle" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170dp"
+        android:text="Kouluta" />
+
+    <RadioGroup
+        android:id="@+id/rgLutemonsMove"
+        android:layout_width="211dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:text="CheckBox" />
+    </RadioGroup>
+
+</FrameLayout>
