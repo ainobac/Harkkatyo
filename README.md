@@ -1,1 +1,1 @@
-Olio-ohjelmoinnin harkkatyö.
+Olio-ohjelmointi kurssin harkkatyö. Mobiilipeli.
